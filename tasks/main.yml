@@ -1,0 +1,18 @@
+---
+
+# Install
+- import_tasks: install.yml
+  tags:
+    - manala_fail2ban
+
+# Config
+- import_tasks: config.yml
+  tags:
+    - manala_fail2ban
+
+# Services
+- import_tasks: services.yml
+  tags:
+    - manala_fail2ban
+    - manala_fail2ban.services
+    - manala.services
